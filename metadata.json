@@ -1,0 +1,6 @@
+{
+  "name": "Coffre-Fort & Testament - Jeu de Rôle",
+  "description": "Coffre-fort électronique interactif avec clavier numérique, indices d'enquête et révélation d'un testament pour jeu de rôle et escape game.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

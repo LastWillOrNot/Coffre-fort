@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+}
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: slowSpin 12s linear infinite;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-testament,
+  #printable-testament * {
+    visibility: visible;
+  }
+  #printable-testament {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 2cm !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    border: 1px solid #333333 !important;
+  }
+}
